@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Timer corePoolSize="8" tickDuration="100" ticksPerWheel="64">
+		<handler clazz="com.model.util.timer._ExampleTimerHandler">
+			<!-- 注：以下内容前提条件是上面的‘handler’参数有效 -->
+			<!-- 如果希望把一些固定任务写在配置文件上，可写在下面，当服务器启动后引擎底层将通过KGameTimerHandler传递给使用者。 下面的参数都可以自定义，因为最终是交给使用者解析并提交KGameTimer执行 -->
+			<!--example: <TimerTask name="taskName" clazz="xx.xx.xxx" firstExecuteTime="20120928200000"></TimerTask> -->
+		</handler>
+
+		<!-- 可以设多个handler组 -->
+	</Timer>
+	
+	
+	<serverList>
+		<server id="1">[1服]英雄降临</server>
+		<server id="2">[2服]暗影特工</server>
+		<server id="3">[3服]突击战士</server>
+		<server id="4">[4服]枪械师</server>
+		<server id="5">[5服]拯救世界</server>
+		<server id="6">[6服]正义之盾</server>
+		<server id="7">[7服]泰坦拳套</server>
+		<server id="8">[8服]毒刺杀忍</server>
+		<server id="9">[9服]绿巨人</server>
+		<server id="10">[10服]死亡女神</server>
+		<server id="11">[11服]闪电侠</server>
+		<server id="12">雄霸天下</server>
+		<server id="13">英雄联盟</server>
+		<server id="14">一刀两断</server>
+	</serverList>
+	<currencyList>
+		<currency type="1">钻石</currency>
+		<currency type="2">金币</currency>
+		<currency type="3">潜能</currency>
+		<currency type="4">荣誉</currency>
+		<currency type="6">军团贡献</currency>
+		<currency type="7">徽记</currency>
+	</currencyList>
+	<otherFlowType>
+		<flowType type="1">背包扩容</flowType>
+		<flowType type="2">资源战竞价</flowType>
+		<flowType type="3">买随机物品</flowType>
+		<flowType type="4">登陆奖励大奖</flowType>
+		<flowType type="5">登陆奖励小奖</flowType>
+		<flowType type="6">删除附件邮件</flowType>
+		<flowType type="7">VIP充值处理</flowType>
+		<flowType type="8">退出军团</flowType>
+		<flowType type="9">被开除出军团</flowType>
+		<flowType type="10">转让团长</flowType>
+		<flowType type="11">自动转让团长</flowType>
+		<flowType type="12">删除角色转让团长</flowType>
+		<flowType type="13">军团科技升级</flowType>
+		<flowType type="14">军团升级</flowType>
+		<flowType type="15">军团解散</flowType>
+	</otherFlowType>
+</root>

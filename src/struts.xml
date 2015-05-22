@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+
+    <struts>
+        <package name="default" extends="json-default">
+        
+            <action name="login" class="com.model.action.UserLoginAction" method="execute">
+                <result name="success">/jsp/welcome.jsp</result>
+                <result name="error">login.jsp</result>
+            </action>
+            
+            <action name="*List" class="com.model.action.ServerListAction" method="{1}">
+				<result name="success" type="json"></result>
+			</action>
+			
+			<action name="searchItemTemplate" class="com.model.action.SearchTemplateAction" method="execute">
+				<result name="success">/jsp/modelPage/searchItemTemplate.jsp</result>
+				<result name="error">/jsp/modelPage/searchItemTemplate.jsp</result>
+			</action>
+				
+			<action name="createNewAccount" class="com.model.action.CreateAccountAction" method="execute">
+				<result name="success">/jsp/modelPage/createNewAccount.jsp</result>
+				<result name="error">/jsp/modelPage/createNewAccount.jsp</result>
+			</action>
+			
+
+			<action name="currencyFlowSearch" class="com.model.action.CurrencyFlowSearchAction"
+				method="execute">
+				<result name="success">/jsp/modelPage/currencyFlow.jsp</result>
+				<result name="error">/jsp/modelPage/currencyFlow.jsp</result>
+			</action>
+		
+			<action name="cutCurrencyPage" class="com.model.action.CurrencyFlowSearchAction"
+				method="cutPage">
+				<result name="success">/jsp/modelPage/currencyFlow.jsp</result>
+				<result name="error">/jsp/modelPage/currencyFlow.jsp</result>
+			</action>
+			
+			<action name="expFlowSearch" class="com.model.action.ExpFlowSearchAction" method="execute">
+				<result name="success">/jsp/modelPage/expFlow.jsp</result>
+            	<result name="error">/jsp/modelPage/expFlow.jsp</result>
+			</action>
+		
+			<action name="cutExpFlowPage" class="com.model.action.ExpFlowSearchAction" method="cutPage">
+				<result name="success">/jsp/modelPage/expFlow.jsp</result>
+				<result name="error">/jsp/modelPage/expFlow.jsp</result>
+			</action>
+			
+			<action name="otherFlowSearch" class="com.model.action.OtherFlowSearchAction" method="execute">
+				<result name="success">/jsp/modelPage/otherFlow.jsp</result>
+				<result name="error">/jsp/modelPage/otherFlow.jsp</result>
+			</action>
+			
+			<action name="cutOtherFlowPage" class="com.model.action.OtherFlowSearchAction" method="cutPage">
+				<result name="success">/jsp/modelPage/otherFlow.jsp</result>
+				<result name="error">/jsp/modelPage/otherFlow.jsp</result>
+			</action>
+			
+			<action name="treasureFlowSearch" class="com.model.action.TreasureFlowSearchAction" method="execute">
+				<result name="success">/jsp/modelPage/treasureFlow.jsp</result>
+				<result name="error">/jsp/modelPage/treasureFlow.jsp</result>
+			</action>
+			
+			<action name="cutTreasureFlowPage" class="com.model.action.TreasureFlowSearchAction" method="cutPage">
+				<result name="success">/jsp/modelPage/treasureFlow.jsp</result>
+				<result name="error">/jsp/modelPage/treasureFlow.jsp</result>
+			</action>
+			
+			<action name="treasureModifySearch" class="com.model.action.TreasureModifySearchAction" method="execute">
+				<result name="success">/jsp/modelPage/treasureModify.jsp</result>
+				<result name="error">/jsp/modelPage/treasureModify.jsp</result>
+			</action>
+			
+			<action name="cutTreasureModifyPage" class="com.model.action.TreasureModifySearchAction" method="cutPage">
+				<result name="success">/jsp/modelPage/treasureModify.jsp</result>
+				<result name="error">/jsp/modelPage/treasureModify.jsp</result>
+			</action>
+			
+			
+			<action name="resetPassword" class="com.model.action.ResetPasswordAction" method="execute">
+				<result type="json"></result>
+			</action>
+			
+			<action name="getAllUser" class="com.model.action.UserLoginAction" method="getUsers">
+				<result name="success">/jsp/modelPage/userList.jsp</result>
+				<result name="error">/jsp/modelPage/userList.jsp</result>
+			</action>
+			
+        </package>
+    </struts>

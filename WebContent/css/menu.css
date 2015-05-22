@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+
+/*基本信息*/ 
+body{
+	font-family:Arial,Tahoma,Helvetica;
+	font-size:14px;
+	margin:0px;
+	text-align:center;
+	word-spacing: normal;
+   	line-height:15px;
+	} 
+
+
+/*页面层容器*/
+#container{
+width:960px;
+margin:0 auto;
+} 
+
+
+#header{
+margin:auto 0;
+}
+
+/*页面横幅*/ 
+#banner{
+	border:1px;
+	BACKGROUND: #3f6580;
+	 HEIGHT: 90px; 
+	 COLOR: #ffffff; 
+	 FONT-SIZE: 0.8em; 
+	  FONT-WEIGHT: bold;
+	  
+}
+
+#middle{
+width:500px;
+color:#FFFFFF;
+font-size:18px;
+float:left;
+height:50px;
+}
